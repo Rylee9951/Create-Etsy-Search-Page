@@ -1,10 +1,97 @@
 html{box-sizing: border-box;}
 *,*:after;*:before{box-sizing: inherit;}
 
-
+.wrapper{
+	width: 1200px;
+	margin: auto;
+}
 .header{
+	display: flex;
+	width: 100%;
+	border-bottom: 1px solid black;
+	justify-content: space-between;
+	padding-bottom: 10px;
+}
+.leftContainer{
 	display: flex;
 }
 .logo{
-	width: 200px;
+	width: 80px;
+	height: 70px;
+}
+.searchDiv{
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.searchInput{
+	width: 300px;
+	height: 29px;
+}
+.search{
+	width: 70px;
+	height: 35px;
+	position: relative;
+	left: -5px;
+	top: -1px;
+	background-color: #E65200;
+	color: white;
+}
+.headingP{
+	color: #E65200;
+	margin-top: 30px;
+}
+.signCon{
+	display:flex;
+	justify-content: space-between;
+	width: 300px;
+}
+.signIn{
+	width: 60px;
+    height: 35px;
+    margin-top: 25px;
+    border: 1px solid #E65200;
+    border-radius: 5px;
+    color: #E65200;
+    font-size: 16px;
+    text-align: center;
+    line-height: 32px;
+}
+.cartContainer{
+	height: 45px;
+    margin-top: 21px;
+    border-left: 1px solid #ccc;
+    padding-left: 5px;
+
+}
+.cart{
+	width: 20px;
+}
+.cartContainer p{
+	margin-top: 0;
+}
+.subHeader{
+	height: 30px;
+	border-bottom: 1px solid black;
+
+}
+.subHeader ul {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+.subHeader ul li:hover{
+	border-bottom: 2px solid #E65200;
+	padding-bottom: 10px;
+}
+.subHeader2{
+	display:flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+.searchDivBox{
+	border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #FFA258;
+    padding: 10px 5px;
+    font-size: 15px;
 }

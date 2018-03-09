@@ -6,17 +6,23 @@
 	<link rel = "stylesheet" href="style.css"/>
 </head>
 <body>
-	<div>
+	<div class="wrapper">
 		<div class="header">
-			<img class="logo" src="./Etsy-Logo.png" alt=""/>
-			<input type="text" name="search" placeholder="whiskey" />
-			<buttton>Search</buttton>
-			<p>Sell on Etsy</p>
-			<p>Register</p>
-			<button>Sign In</button>
-			<div>
-				<img class="cart" src="./cart.png"/>
-				<p>Cart</p>
+			<div class="leftContainer">
+				<img class="logo" src="./assets/Etsy-Logo.png" alt=""/>
+				<div class="searchDiv">
+					<input class="searchInput" type="text" name="search" placeholder="whiskey" />
+					<button class="search">Search</button>
+				</div>
+			</div>
+			<div class="signCon">
+				<p class="headingP">Sell on Etsy</p>
+				<p class="headingP">Register</p>
+				<div class="signIn">Sign In</div>
+				<div class="cartContainer">
+					<img class="cart" src="./assets/cart.png"/>
+					<p>Cart</p>
+				</div>
 			</div>
 		</div>
 		<div class="subHeader">
@@ -32,16 +38,163 @@
 			</ul>
 		</div>
 		<div class="subHeader2">
-			<div>whiskey decanter</div>
-			<div>whiskey glasses</div>
-			<div>whiskey barrel</div>
-			<div>whiskey stones</div>
-			<div>whiskey glass</div>
-			<div>whiskey set</div>
-			<div>whiskey decanter set</div>
-			<div>whiskey dispenser</div>
-			<div>whiskey gifts</div>
-			<div>whiskey shirt</div>
+			<div class="searchDivBox">whiskey decanter</div>
+			<div class="searchDivBox">whiskey glasses</div>
+			<div class="searchDivBox">whiskey barrel</div>
+			<div class="searchDivBox">whiskey stones</div>
+			<div class="searchDivBox">whiskey glass</div>
+			<div class="searchDivBox">whiskey set</div>
+			<div class="searchDivBox">whiskey decanter set</div>
+			<div class="searchDivBox">whiskey dispenser</div>
+			<div class="searchDivBox">whiskey gifts</div>
+			<div class="searchDivBox">whiskey shirt</div>
+		</div>
+		<div class="bodyContainer">
+			<div class="leftColumn">
+				<div>
+					<h4>All Categories</h4>
+					<ul>
+						<li>Home & Living</li>
+						<li>Art & Collectibles</li>
+						<li>Weddings</li>
+						<li>Clothing</li>
+					</ul>
+					<p>+ Show more</p>
+				</div>
+				<div>
+					<h4>Shipping</h4>
+					<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Free shipping</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Ready to ship in 1 business day</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Ready to ship within 3 business days</label>
+				</div>
+				<div>
+					<h4>Special offers</h4>
+					<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">On sale</label>
+				</div>
+				<div>
+					<h4>Color</h4>
+					<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Black</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">White</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Brown</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Clear</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Red</label>
+    				<p>+ Show more</p>
+				</div>
+				<div>
+					<h4>Occasion</h4>
+					<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Wedding</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Birthday</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Housewarming</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Anniversary</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Bachelor party</label>
+    				<p>+ Show more</p>
+				</div>
+				<div>
+					<h4>Holiday</h4>
+					<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Christmas</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Father's Day</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Valentine's Day</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">St Patrick's Day</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Mother's Day</label>
+    				<p>+ Show more</p>
+				</div>
+				<div>
+					<h4>Material</h4>
+					<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Glass</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Metal</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Ceramic</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Wood</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Cork</label>
+    				<p>+ Show more</p>
+				</div>
+				<div>
+					<h4>Can be personalized</h4>
+					<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Yes</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">No</label>
+				</div>
+				<div>
+					<h4>Shop location</h4>
+					<input type="radio" class="radio">
+    				<label for="label">Anywhere</label>
+    				<input type="radio" class="radio">
+    				<label for="label">United States</label>
+    				<input type="radio" class="radio">
+    				<label for="label">Custom</label>
+    				<input type="text" class="inputLocation"/>
+    				<button></button>
+				</div>
+				<div>
+					<h4>Item type</h4>
+					<input type="radio" class="radio">
+    				<label for="label">All items</label>
+    				<input type="radio" class="radio">
+    				<label for="label">Handmade</label>
+    				<input type="radio" class="radio">
+    				<label for="label">Vintage</label>
+				</div>
+				<div>
+					<h4>Price ($)</h4>
+					<input type="radio" class="radio">
+    				<label for="label">Any price</label>
+    				<input type="radio" class="radio">
+    				<label for="label">Under $25</label>
+    				<input type="radio" class="radio">
+    				<label for="label">$25 to $50</label>
+    				<input type="radio" class="radio">
+    				<label for="label">$50 to $100</label>
+    				<input type="radio" class="radio">
+    				<label for="label">Over $100</label>
+    				<input type="radio" class="radio">
+    				<label for="label">Custom</label>
+    				<input type="text" name=""/>
+    				<p>to</p>
+    				<input type="text" name="">
+    				<button></button>
+				</div>
+				<div>
+					<h4>Ordering options</h4>
+					<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Accepts Etsy gift cards</label>
+    				<input type="checkbox" class="checkbox" />
+    				<label for="checkbox">Can be gift-wrapped</label>
+				</div>
+				<div>
+					<h4>Ship to</h4>
+					<select>
+  						<option>United States</option>
+						<option>Italy</option>
+						<option>Trinidad & Tobago</option>
+						<option>Canada</option>
+					</select>
+				</div>
+			</div>
+			<div class="rightColumn"></div>
 		</div>
 	</div>
 	<script type="main.js"></script>
