@@ -95,3 +95,20 @@ html{box-sizing: border-box;}
     padding: 10px 5px;
     font-size: 15px;
 }
+.bodyContainer{
+	display: flex;
+
+}
+.leftColumn{
+	width: 230px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-top: 20px;
+	padding-left: 10px;
+}
+.leftColumn div{
+	border-bottom: 1px solid #ccc;
+}
+.leftColumn p{
+	color: #FFA258;
+}
